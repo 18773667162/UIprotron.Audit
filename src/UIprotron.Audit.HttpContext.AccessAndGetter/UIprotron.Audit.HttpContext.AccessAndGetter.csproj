@@ -10,4 +10,8 @@
     <ProjectReference Include="..\UIprotron.Audit.Core\UIprotron.Audit.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
 </Project>
