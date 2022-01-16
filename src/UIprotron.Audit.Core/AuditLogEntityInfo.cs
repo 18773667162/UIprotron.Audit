@@ -6,22 +6,19 @@ using System.Threading.Tasks;
 
 namespace UIprotron.Audit.Core
 {
-    public class AuditLogEntityInfo:AuditLogInfo
+    public class AuditLogEntityInfo : AuditLogInfo
     {
-
         public AuditLogEntityInfo() 
         {
-
+            ChangeTime = DateTime.Now;
         }
 
         public DateTime ChangeTime { get; }
 
-        public ChangeTypeEnum ChangeType { get; }
+        public ChangeTypeEnum ChangeType { get; set; }
 
-        public string EntityId { get; }
+        public string EntityId { get; set; }
 
-        public string EntityTypeFullName { get; }
-
-        public List<EntityPropertyChangeInfo> EntityPropertyChangeInfos { get; }
+        public string EntityTypeFullName { get; set; }
     }
 }

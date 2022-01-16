@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UIprotron.Audit.Core
+namespace UIprotron.Audit.Core.Store
 {
-    public interface IHasExtraProperties
+    public interface IResourceStore
     {
-        ExtraPropertyDictionary ExtraProperties { get; }
     }
 }
