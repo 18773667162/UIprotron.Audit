@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UIprotron.Audit.Core.Store
+namespace UIprotron.Audit.HttpContext.AccessAndGetter
 {
-    public interface IEntityResource
+    public class DbContextAuditFilter
     {
     }
 }

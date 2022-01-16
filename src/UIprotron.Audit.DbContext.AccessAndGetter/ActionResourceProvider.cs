@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UIprotron.Audit.Core.Providers;
+using UIprotron.Audit.Core.Resources;
 
 namespace UIprotron.Audit.DbContext.AccessAndGetter
 {
-    public class ActionResourceProvider:IResourcePro
+    public class ActionResourceProvider : IResourceProvider<ActionResources>
     {
+        public IEnumerable<ActionResources> GetResources()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<ActionResources>> GetResourcesAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

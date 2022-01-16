@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UIprotron.Audit.Core.Providers
+﻿namespace UIprotron.Audit.Core.Providers
 {
-    public class IResourceProvider
+    public interface IResourceProvider<T> where T : class
     {
+        IEnumerable<T> GetResources();
+
+        Task<IEnumerable<T>> GetResourcesAsync();
     }
 }
