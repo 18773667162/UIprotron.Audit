@@ -51,17 +51,17 @@ namespace UIprotron.Audit.Core
         /// <summary>
         /// 传递给方法的参数的JSON格文本.
         /// </summary>
-        public string Parameters { get; }
+        public string Parameters { get; set; }
 
         /// <summary>
         /// 执行的时间
         /// </summary>
-        public long ExecutionTime { get; }
+        public long ExecutionTime { get; set; }
 
         /// <summary>
         /// 方法执行时长,以毫秒为单位. 可以用来观察方法的性能
         /// </summary>
-        public long ExecutionDuration { get; }
+        public long ExecutionDuration { get; set; }
 
     }
 }
